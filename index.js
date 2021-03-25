@@ -10,38 +10,48 @@ inquirer
   .prompt([
     {
       type: 'input',
-      message: 'What is your name?',
-      name: 'name',
+      message: 'What is the name of your project?',
+      name: 'projectName',
     },
     {
       type: 'input',
-      message: 'Where are you from?',
-      name: 'location',
+      message: 'Give a description of your project',
+      name: 'description',
     },
     {
       type: 'input',
-      message: 'What is your GitHub username?',
-      name: 'github',
+      message: 'What do you need to install your project?',
+      name: 'installation',
     },
     {
-        type: 'input',
-        message: 'What is your LinkedIn address?',
-        name: 'linkedin',
-      },
+      type: 'input',
+      message: 'How do you use your project?',
+      name: 'usage',
+    },
+    {
+      type: 'input',
+      message: 'Who contributed to the building of this project?',
+      name: 'contributers',
+    },
+    {
+      type: 'input',
+      message: '#',
+      name: 'test',
+    },
   ]).then(function(data){
 
-  const htmlGen = `#`;
+  const mdGen = `#`;
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
+
+fs.writeFile('index.js', mdGen, (err) =>
+err ? console.error(err) : console.log('Success!')
+);
+});
 
 // TODO: Create a function to initialize app
 function init() {}
 
 // Function call to initialize app
 init();
-
-    fs.writeFile('index.js', htmlGen, (err) =>
-    err ? console.error(err) : console.log('Success!')
-    );
-});
