@@ -4,7 +4,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [];
 
 inquirer
   .prompt([
@@ -30,28 +29,78 @@ inquirer
     },
     {
       type: 'input',
+      message: 'What licenses do you need?',
+      name: 'license',
+    },
+    {
+      type: 'input',
       message: 'Who contributed to the building of this project?',
       name: 'contributers',
     },
     {
       type: 'input',
-      message: '#',
+      message: 'How can you test your project?',
       name: 'test',
     },
+    {
+      type: 'input',
+      message: 'Where can a user reach you for questions?',
+      name: 'questions'
+    },
   ]).then(function(data){
-
-  const mdGen = `#`;
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
-fs.writeFile('index.js', mdGen, (err) =>
+const mdGen = `
+## ${data.projectName}
+
+## Description
+
+${data.description}
+
+## Table of Contents
+---
+*Installation
+*Usage
+*License
+*Contributing
+*Tests
+*Questions
+
+## Installation
+To install necessary dependencies, run the following command:
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+## License
+
+${data.license}
+
+## Contributing
+
+${data.contributers}
+
+## Tests
+To run tests, enter the following command:
+
+${data.test}
+
+##Questions
+If you have any questions about the repo, open an issue or contact me directly at ${data.questions}.
+  `;
+
+fs.writeFile('README.md', mdGen, (err) =>
 err ? console.error(err) : console.log('Success!')
 );
 });
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
