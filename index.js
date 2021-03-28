@@ -54,44 +54,51 @@ function writeToFile(fileName, data) {}
 
 const mdGen = `
 ## ${data.projectName}
-
+----
 ## Description
 
 ${data.description}
+----
 
 ## Table of Contents
----
-*Installation
-*Usage
-*License
-*Contributing
-*Tests
-*Questions
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+----
 
 ## Installation
 To install necessary dependencies, run the following command:
 
 ${data.installation}
+----
 
 ## Usage
 
 ${data.usage}
+----
 
 ## License
 
 ${data.license}
+----
 
 ## Contributing
 
 ${data.contributers}
+----
 
 ## Tests
 To run tests, enter the following command:
 
 ${data.test}
+----
 
-##Questions
-If you have any questions about the repo, open an issue or contact me directly at ${data.questions}.
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at [email](${data.questions}).
   `;
 
 fs.writeFile('README.md', mdGen, (err) =>
