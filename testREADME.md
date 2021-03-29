@@ -1,10 +1,9 @@
-## README generator
+
+## test
 
 ## Description
 
-The README generator takes user input from prompts in the terminal and automatically creates a README file for a given project.
-
-[![README generator demo](http://img.youtube.com/vi/DSfKRRiL_ug/0.jpg)](http://www.youtube.com/watch?v=DSfKRRiL_ug "README generator demo")
+test
 
 ## Table of Contents
 
@@ -19,16 +18,15 @@ The README generator takes user input from prompts in the terminal and automatic
 ## Installation
 To install necessary dependencies, run the following command:
 
-- npm init -y 
-- npm i inquirer
+- test
 
 ## Usage
 
-Run node index.js in the terminal and follow the prompts.
+test
 
 ## License
 
-N/A
+GNU AGPLv3
 
 ## Contributing
 
@@ -37,7 +35,7 @@ github.com/joshuamaney
 ## Tests
 To run tests, enter the following command:
 
-N/A
+test
 
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at my [email](joshuaraymaney@gmail.com).
