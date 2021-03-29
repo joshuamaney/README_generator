@@ -54,11 +54,10 @@ function writeToFile(fileName, data) {}
 
 const mdGen = `
 ## ${data.projectName}
-----
+
 ## Description
 
 ${data.description}
-----
 
 ## Table of Contents
 
@@ -74,28 +73,23 @@ ${data.description}
 To install necessary dependencies, run the following command:
 
 - ${data.installation}
-----
 
 ## Usage
 
 ${data.usage}
-----
 
 ## License
 
 ${data.license}
-----
 
 ## Contributing
 
 ${data.contributers}
-----
 
 ## Tests
 To run tests, enter the following command:
 
 ${data.test}
-----
 
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at [email](${data.questions}).
