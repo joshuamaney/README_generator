@@ -39,5 +39,5 @@ To run tests, enter the following command:
 N/A
 
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at [email](joshuaraymaney@gmail.com).
+If you have any questions about the repo, open an issue or contact me directly at my [email](joshuaraymaney@gmail.com).
   
