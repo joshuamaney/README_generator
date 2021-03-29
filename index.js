@@ -93,7 +93,7 @@ To run tests, enter the following command:
 ${data.test}
 
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at [email](${data.questions}).
+If you have any questions about the repo, open an issue or contact me directly at my [email](${data.questions}).
   `;
 
 fs.writeFile('README.md', mdGen, (err) =>
