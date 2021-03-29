@@ -34,7 +34,7 @@ inquirer
     },
     {
       type: 'input',
-      message: 'Who contributed to the building of this project?',
+      message: 'Who contributed to the building of this project? (enter your github address)',
       name: 'contributers',
     },
     {
@@ -73,7 +73,7 @@ ${data.description}
 ## Installation
 To install necessary dependencies, run the following command:
 
-${data.installation}
+- ${data.installation}
 ----
 
 ## Usage
