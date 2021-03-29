@@ -1,9 +1,9 @@
 
-## README.md generator
+## README generator
 
 ## Description
 
-The README.md generator takes user input from prompts in the terminal and automatically creates a README.md file for a given project.
+The README generator takes user input from prompts in the terminal and automatically creates a README file for a given project.
 
 ## Table of Contents
 
@@ -13,10 +13,9 @@ The README.md generator takes user input from prompts in the terminal and automa
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
----
+----
 
 ## Installation
-
 To install necessary dependencies, run the following command:
 
 - npm init -y 
@@ -28,19 +27,17 @@ Run node index.js in the terminal and follow the prompts.
 
 ## License
 
-none.
+N/A
 
 ## Contributing
 
 github.com/joshuamaney
 
 ## Tests
-
 To run tests, enter the following command:
 
-n/a
+N/A
 
 ## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at joshuaraymaney@gmail.com
+If you have any questions about the repo, open an issue or contact me directly at [email](joshuaraymaney@gmail.com).
   
